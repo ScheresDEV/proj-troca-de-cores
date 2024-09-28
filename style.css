@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif; /* ' font-family' tipo de fonte a utilizar*/
+display: flex; /* habilita varias funções para a Tag*/
+align-items: center; /* alinha os Itens ao Centro na horizontal*/
+justify-content:center ; /* alinha os Itens ao Centro na Vertical*/
+height: 100vh; /* oculpa a tela toda */
+background-color: blueviolet; /*Cor de Fundo*/
+background-position: center; /* posiciona a imagem ao centro*/
+background-size: cover;  /* estica a imagem ate a forma ideal ate cobrir a tela */
+
+}
+
+main {
+    text-align: center; /* alinhamento horizontal de texto*/
+    background-color: rgba(255, 255, 255, 0.8);/*Cor de Fundo*/
+    border-radius: 10px; /*arredondamento das bordas*/
+    max-width: 80%; /*o máximo de distanciamento que o objeto vai estar mesmo em telas menores*/
+padding: 20px; /*Espaço Criado Envolta do Elemento internamente*/
+}
+
+button , input[type="color"], label {
+    cursor:pointer; /*Habilita a Imagem da Mão quando Passado no Botão*/
+}
+
+button, input[type="text"] {
+    margin: 5px; /*espaço criado Envolta do Elemento externamente */
+    padding:10px;
+    font-size: 16px;
+    outline: none;
+}
+
+input[type="file"] {
+    display:none;
+}
+
+label {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px; /* padding com dois numerais significa que o 1° valor se aplica encima e embaixo e o 2° valor na esquerda e direita*/
+    border-radius: 4px;
+    font-size: 14px;
+    margin-top: 10px;
+    background-color: #f8f8f8;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}

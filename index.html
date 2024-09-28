@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    <title>DevClub Troca de Cor</title>
+</head>
+<body>
+    <main><!--Tag Principal html Semântico-->
+        <h1>DevClub - Troca Cor </h1><!--Tag Texto h1-->
+
+       
+        <button onclick="trocaCor('red')">Vermelho</button>
+        <button  onclick="trocaCor('green')">Verde</button>
+        <button  onclick="trocaCor('blue')">Azul</button>
+        <button  onclick="trocaCor('yellow')">Amarelo</button>
+        <button onclick="corAleatoria('cor')">Cor Aleatória</button>
+    <br />
+    <input placeholder="Nome da Cor #NEX" type="text" class="input-cor"> ><!--Tag 'Intup' tipo de Elementos que sera atribuido-->
+    <button onclick="aplicaCorPersonalizada()">Aplicar Cor</button>
+    <input type="Color" onchange="trocaCor(this.value)"> <!--onchange troca o valor quando mudado e (this.value) pega o valor dentro dele proprio-->
+    <br />
+    <label> <!--Texto Colocado Dentro do Input-->
+        Escolher Imagem
+        <input type="file" accept="image/*" onchange="escolherimagem(this.files[0])"><!--accept="image/* seleciona somente tipos de imagem que pode ser acrescentadas "-->
+    </label>
+        
+    </main>
+    
+</body>
+<script src="./scripts.js"></script>
+</html>
